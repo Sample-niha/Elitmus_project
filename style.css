@@ -1,0 +1,18 @@
+body{
+    background-size: 1600px 720px;
+    background-repeat: no-repeat ;
+}
+h1{
+    font-size: 60px;
+}
+.button {
+    background-color:#c2a213;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 45px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

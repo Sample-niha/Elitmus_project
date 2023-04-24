@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        stage-**
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+</head>
+
+<body background="https://lumiere-a.akamaihd.net/v1/images/uk_winnie-the-pooh_hero-banner_r_09ed008d.jpeg" >
+    <h1 align="center" style="color:white">FIND MY FACE </h1> 
+    <h2 align="center" style="color: white;">YOU HAVE TWO CHANCES TO FIND ME</h2>
+    <div>
+        <img src="https://img.freepik.com/free-photo/golden-yellow-seamless-venetian-plaster-background_24972-294.jpg?w=2000" id="1" onclick="myfunction();handleClick();" alt="Image" height="100px" width="100px">
+    </div>
+    <div>
+        <img src="https://img.freepik.com/free-photo/golden-yellow-seamless-venetian-plaster-background_24972-294.jpg?w=2000" id="2" onclick="myfunction1();handleClick();" alt="Image" height="100px" width="100px">
+    </div>
+    <div>
+        <img src="https://img.freepik.com/free-photo/golden-yellow-seamless-venetian-plaster-background_24972-294.jpg?w=2000" id="3" onclick="myfunction2();handleClick();" alt="Image" height="100px" width="100px">
+    </div>
+    <script>
+        let pic=["https://i.pinimg.com/originals/fe/da/83/feda83c54cc2e108f550a390f7b22de6.png",
+        "https://i.pinimg.com/736x/f9/93/ab/f993ab93f363b466eabc00dd55ea1bab.jpg",
+        "https://easydrawingart.com/wp-content/uploads/2020/08/how-to-draw-tigger-full-body-.jpg"];
+        var c=0,x=0,y=0,z=0,count=0,l=0;
+        function myfunction(){
+            if(x==0&&count<2)
+            {
+            var a=Math.floor(Math.random()*pic.length);
+            document.getElementById('1').src=pic[a];
+            c=a;
+            setTimeout(() => {
+                l=1;
+            if(c==1){
+            location.href="lastpage.html";
+        }
+        }, 500);
+    }
+    x=1;
+        }
+        function myfunction1(){
+            if(y==0&&count<2){
+            var a=Math.floor(Math.random()*pic.length);
+            document.getElementById('2').src=pic[a];
+            c=a;
+            setTimeout(() => {
+            if(c==1){
+                l=1;
+            location.href="lastpage.html";
+        }
+        }, 500);
+        }
+        y=1;
+    }
+        function myfunction2(){
+            if(z==0&&count<2)
+            {
+            var a=Math.floor(Math.random()*pic.length);
+            document.getElementById('3').src=pic[a];
+            c=a;
+            setTimeout(() => {
+            if(c==1){
+                location.href="lastpage.html";
+        }
+        }, 500);
+    }
+    z=1;
+    }
+    function handleClick(){
+    count++;
+    if(count==2)
+    {
+        setTimeout(() => {
+            alert("OOPS! You are unable to find me!!!");
+        location.href="level1.html";
+        return;
+        }, 1000);
+        
+    }  
+}
+</script>
+</body>
+</html>

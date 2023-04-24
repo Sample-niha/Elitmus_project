@@ -1,0 +1,138 @@
+<html>
+  <head> 
+    <link rel="stylesheet" href="level3.css">
+  </head>
+    <style>
+	.input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        width: 300px;
+        margin-bottom: 10px;
+      }
+      
+      button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3e8e41;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+			
+	</style>
+</head>
+<body>
+	<form onsubmit="checkAnswer(event)">
+		<label for="answer">
+        <ul class="cloud" role=" navigation " aria-label=" Webdev word cloud ">
+  <li><a href="#" data-weight="4">xyz</a></li>
+  <li><a href="#" data-weight="1">you</a></li>
+  <li><a href="#" data-weight="5">Sss</a></li>
+  <li><a href="#" data-weight="8">Good</a></li>
+  <li><a href="#" data-weight="6">Fff</a></li>
+  <li><a href="#" data-weight="4">Are</a></li>
+  <li><a href="#" data-weight="5">VueJS</a></li>
+  <li><a href="#" data-weight="6">Ggg</a></li>
+  <li><a href="#" data-weight="2">mmm</a></li>
+  <li><a href="#" data-weight="9">Jjj</a></li>
+  <li><a href="#" data-weight="3">doing</a></li>
+  <li><a href="#" data-weight="7">rrrt</a></li>
+  <li><a href="#" data-weight="8">SSS</a></li> 
+  <li><a href="#" data-weight="1">Cackkk</a></li>
+  <li><a href="#" data-weight="3">Leeee</a></li>
+  </ul>
+</label>
+<div class="input-container">
+  <input type="text" id="answer" placeholder="type your answer here"autofocus/>
+  <button onclick="checkInput()">submit</button>
+  <p id="result"></p>
+</div>
+	</form>
+	<script>
+		function checkAnswer(event) {
+			event.preventDefault();
+			const answer = document.getElementById("answer").value.toLowerCase();
+			if (answer === "you are doing good") {
+				window.location.href = "bonus.html";
+			} else {
+				
+		   
+				document.getElementById("result").innerHTML = "Sorry, that's not the correct answer.Please try again.";
+		
+				//alert("Sorry, that's not the correct answer.Please try again.");
+			}
+		}
+
+		// document.addEventListener("keydown", function(event) {
+		// 	if (event.code === "Space") {
+		// 		event.preventDefault();
+		// 		checkAnswer(event);
+		// 	}
+		// });
+	</script>
+</body>
+</html>
+<!-- <ul class="cloud" role=" navigation " aria-label=" Webdev word cloud ">
+  <li><a href="#" data-weight="4">xyz</a></li>
+  <li><a href="#" data-weight="1">you</a></li>
+  <li><a href="#" data-weight="5">Sss</a></li>
+  <li><a href="#" data-weight="8">Good</a></li>
+  <li><a href="#" data-weight="6">Fff</a></li>
+  <li><a href="#" data-weight="4">Aaa</a></li>
+  <li><a href="#" data-weight="5">VueJS</a></li>
+  <li><a href="#" data-weight="6">Ggg</a></li>
+  <li><a href="#" data-weight="2">mmm</a></li>
+  <li><a href="#" data-weight="9">Jjj</a></li>
+  <li><a href="#" data-weight="3">doing</a></li>
+  <li><a href="#" data-weight="7">rrrt</a></li>
+  <li><a href="#" data-weight="8">SSS</a></li> 
+  <li><a href="#" data-weight="1">Cackkk</a></li>
+  <li><a href="#" data-weight="3">Leeee</a></li>
+  <input type="text" id="answer" name="answer" placeholder="Type your answer here" autofocus />
+		<div class="sub"><input type="submit" value="Submit" /> </div>
+
+</ul>
+<script>
+  function checkAnswer(event) {
+    event.preventDefault();
+    const answer = document.getElementById("answer").value.toLowerCase();
+    if (answer === "you are doing good") {
+      window.location.href = "next_page.html";
+    } else {
+      
+     
+      document.getElementById("message").innerHTML = "Sorry, that's not the correct answer. Please try again.";
+  
+      //alert("Sorry, that's not the correct answer. Please try again.");
+    }
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.code === "Space") {
+      event.preventDefault();
+      checkAnswer(event);
+    }
+  });
+</script>
+
+</body>
+</html> -->

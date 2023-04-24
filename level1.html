@@ -1,0 +1,74 @@
+<html>
+    <title> puzzle application </title>
+    <head>
+        <style>
+            .button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #151d16;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .button:hover {background-color: #161b17}
+            
+            .button:active {
+              background-color: #090b09;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .popup-content
+            {
+                background-color: #fff;
+                padding: 16px;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #close-popup
+            {
+                margin-top: 16px;
+            }
+            .popup{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #666;
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+            </style>
+    </head>
+    <body background="https://cdn.quotesgram.com/img/47/62/1770708066-Winnie-the-Pooh-think-think-think.jpg" style="background-repeat: no-repeat;background-size: cover;">
+        <img src="bubble.webp" style="position: fixed;width: 600px;height: 500px; margin-top: -50px;">
+        <br>
+        <br><br><br><br>
+        <h1 style="margin-left: 125px;">WHAT HAS TEETH</h1>
+        <h1 style="margin-left: 150px;">BUT NO MOUTH</h1>
+        <div  >
+            <button class="button" style="margin-top: 400px; margin-left: 350px;"onclick="correct()">SAW</button>
+            <button class="button" style="margin-left: 100px;" onclick="Myfunction()">KNIFE</button>
+            <button class="button" style="margin-left: 100px;" onclick="Myfunction()">IRON</button>
+            <button class="button" style="margin-left: 100px;" onclick="Myfunction()">HEN</button>
+            </div>
+            <script>
+                function Myfunction(){
+                    alert("IT,S A WRONG ONE....😕  TRY AGAIN...");
+                }
+                function correct(){
+                    location.href="congo1.html"
+                }
+            </script>
+    </body>
+</html>

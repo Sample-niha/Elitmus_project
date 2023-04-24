@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const yesBtn = document.getElementById("yes-btn");
+const noBtn = document.getElementById("no-btn");
+
+yesBtn.addEventListener("click", () => {
+  window.location.href = "level-2.html";
+});
+
+noBtn.addEventListener("click", () => {
+  window.location.href = "game-over.html";
+});
+
+    </script>
+
+ <style>
+    body{
+        background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+
+    }
+    #message {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(19, 10, 10);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  
+}
+
+#message h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#message p {
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: rgb(18, 15, 15);
+  border: none;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #4CAF50;
+  transform: translateY(2px);
+}
+
+  </style>
+  </head>
+
+  <body background="https://e0.pxfuel.com/wallpapers/35/49/desktop-wallpaper-winnie-the-pooh-winnie-the-pooh-quotes-laptop.jpg">
+    <div id="message">
+        <h1>Congratulations!</h1>
+        <p>You have completed Level-2 in finding the treasure!</p>
+        <p>Do you want to continue?</p>
+        <div class="button-container">
+          <button id="yes-btn"><a href="level3.html">Yes</a</button>
+          <button id="no-btn"><a href="intro.html">No</a></button>
+        </div>
+      </div>
+      
+  </body>
+  </html>

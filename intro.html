@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid #dfdf16;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 1s steps(30, end), blink-caret 0.75s step-end infinite;
+  margin-top: 1em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#dfdf16}
+}
+
+.text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0c0000;
+  text-transform: uppercase;
+}
+
+.button {
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: #0fe713;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/48/85/12/488512487549d429a929eb29d453f44a.gif" alt="Pooh" class="image">
+        <div class="typing">
+          <p class="text">Hii! I am winnie the pooh i am searching for my honey will you help me?? please!!</p>
+        </div>
+        <button class="button"><a href="level1.html"> Next</button>
+      </div>
+    
+</body>
+</html>
+
+
+        
